@@ -27,7 +27,7 @@ public class StackWithArray implements Stack {
     @Override
     public void push(int num){
         if(isFull())
-            throw new StackOverflowError();
+            throw new StackOverflowError("Pilha cheia : Stack Overflow");
         arr[++top] = num;
         System.out.println("Elemento inserido: "+num);
     }
